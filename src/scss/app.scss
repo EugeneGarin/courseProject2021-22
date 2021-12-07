@@ -1,4 +1,8 @@
 // Fonts faces
 @import "fonts";
 
+body {
 
+    @apply bg-gray-700 flex flex-col justify-between h-screen text-white font-primary;
+
+}

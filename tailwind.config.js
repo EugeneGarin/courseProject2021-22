@@ -9,10 +9,10 @@ module.exports = {
         ]
     },
     theme: {
-        fontFamily: {
-            'primary': ['Open Sans'],
-        },
         extend: {
+            fontFamily: {
+                'primary': ['Ubuntu Mono'],
+            },
         },
     },
     variants: {

@@ -1,19 +1,7 @@
 @font-face {
-  font-family: "Open Sans";
+  font-family: "Ubuntu Mono";
 
-  src: url("OpenSans-Regular.woff2") format("woff2"), url("OpenSans-Regular.woff") format("woff");
-
-  font-weight: normal;
-
-  font-style: normal;
-
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Open Sans";
-
-  src: url("OpenSans-Italic.woff2") format("woff2"), url("OpenSans-Italic.woff") format("woff");
+  src: url("UbuntuMono-Italic.woff2") format("woff2"), url("UbuntuMono-Italic.woff") format("woff");
 
   font-weight: normal;
 
@@ -23,21 +11,9 @@
 }
 
 @font-face {
-  font-family: "Open Sans";
+  font-family: "Ubuntu Mono";
 
-  src: url("OpenSans-Medium.woff2") format("woff2"), url("OpenSans-Medium.woff") format("woff");
-
-  font-weight: 500;
-
-  font-style: normal;
-
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Open Sans";
-
-  src: url("OpenSans-BoldItalic.woff2") format("woff2"), url("OpenSans-BoldItalic.woff") format("woff");
+  src: url("UbuntuMono-BoldItalic.woff2") format("woff2"), url("UbuntuMono-BoldItalic.woff") format("woff");
 
   font-weight: bold;
 
@@ -47,9 +23,21 @@
 }
 
 @font-face {
-  font-family: "Open Sans";
+  font-family: "Ubuntu Mono";
 
-  src: url("OpenSans-Bold.woff2") format("woff2"), url("OpenSans-Bold.woff") format("woff");
+  src: url("UbuntuMono-Regular.woff2") format("woff2"), url("UbuntuMono-Regular.woff") format("woff");
+
+  font-weight: normal;
+
+  font-style: normal;
+
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Ubuntu Mono";
+
+  src: url("UbuntuMono-Bold.woff2") format("woff2"), url("UbuntuMono-Bold.woff") format("woff");
 
   font-weight: bold;
 
@@ -58,86 +46,14 @@
   font-display: swap;
 }
 
-@font-face {
-  font-family: "Open Sans";
-
-  src: url("OpenSans-LightItalic.woff2") format("woff2"), url("OpenSans-LightItalic.woff") format("woff");
-
-  font-weight: 300;
-
-  font-style: italic;
-
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Open Sans";
-
-  src: url("OpenSans-SemiBoldItalic.woff2") format("woff2"), url("OpenSans-SemiBoldItalic.woff") format("woff");
-
-  font-weight: 600;
-
-  font-style: italic;
-
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Open Sans";
-
-  src: url("OpenSans-MediumItalic.woff2") format("woff2"), url("OpenSans-MediumItalic.woff") format("woff");
-
-  font-weight: 500;
-
-  font-style: italic;
-
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Open Sans";
-
-  src: url("OpenSans-SemiBold.woff2") format("woff2"), url("OpenSans-SemiBold.woff") format("woff");
-
-  font-weight: 600;
-
-  font-style: normal;
-
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Open Sans";
-
-  src: url("OpenSans-Light.woff2") format("woff2"), url("OpenSans-Light.woff") format("woff");
-
-  font-weight: 300;
-
-  font-style: normal;
-
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Open Sans";
-
-  src: url("OpenSans-ExtraBoldItalic.woff2") format("woff2"), url("OpenSans-ExtraBoldItalic.woff") format("woff");
-
-  font-weight: bold;
-
-  font-style: italic;
-
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Open Sans";
-
-  src: url("OpenSans-ExtraBold.woff2") format("woff2"), url("OpenSans-ExtraBold.woff") format("woff");
-
-  font-weight: bold;
-
-  font-style: normal;
-
-  font-display: swap;
+body {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+  --tw-bg-opacity: 1;
+  background-color: rgba(55, 65, 81, var(--tw-bg-opacity));
+  font-family: Ubuntu Mono;
+  --tw-text-opacity: 1;
+  color: rgba(255, 255, 255, var(--tw-text-opacity));
 }

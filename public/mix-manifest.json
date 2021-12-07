@@ -28,5 +28,13 @@
     "/fonts/OpenSans-SemiBold.woff": "/fonts/OpenSans-SemiBold.woff",
     "/fonts/OpenSans-SemiBold.woff2": "/fonts/OpenSans-SemiBold.woff2",
     "/fonts/OpenSans-SemiBoldItalic.woff": "/fonts/OpenSans-SemiBoldItalic.woff",
-    "/fonts/OpenSans-SemiBoldItalic.woff2": "/fonts/OpenSans-SemiBoldItalic.woff2"
+    "/fonts/OpenSans-SemiBoldItalic.woff2": "/fonts/OpenSans-SemiBoldItalic.woff2",
+    "/fonts/UbuntuMono-Bold.woff": "/fonts/UbuntuMono-Bold.woff",
+    "/fonts/UbuntuMono-Bold.woff2": "/fonts/UbuntuMono-Bold.woff2",
+    "/fonts/UbuntuMono-BoldItalic.woff": "/fonts/UbuntuMono-BoldItalic.woff",
+    "/fonts/UbuntuMono-BoldItalic.woff2": "/fonts/UbuntuMono-BoldItalic.woff2",
+    "/fonts/UbuntuMono-Italic.woff": "/fonts/UbuntuMono-Italic.woff",
+    "/fonts/UbuntuMono-Italic.woff2": "/fonts/UbuntuMono-Italic.woff2",
+    "/fonts/UbuntuMono-Regular.woff": "/fonts/UbuntuMono-Regular.woff",
+    "/fonts/UbuntuMono-Regular.woff2": "/fonts/UbuntuMono-Regular.woff2"
 }
