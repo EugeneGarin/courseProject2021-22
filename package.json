@@ -1,0 +1,33 @@
+{
+  "name": "gnt",
+  "version": "1.0.0",
+  "description": "",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fanboxio/greaternashvilletitle.com.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fanboxio/greaternashvilletitle.com/issues"
+  },
+  "homepage": "https://github.com/fanboxio/greaternashvilletitle.com#readme",
+  "devDependencies": {
+    "alpinejs": "^3.7.0",
+    "browser-sync": "^2.27.7",
+    "browser-sync-webpack-plugin": "^2.3.0",
+    "filename-regex": "^2.0.1",
+    "laravel-mix": "^6.0.39",
+    "mix-html-builder": "^0.8.0",
+    "mix-tailwindcss": "^1.3.0",
+    "postcss": "^8.3.11",
+    "resolve-url-loader": "^4.0.0",
+    "sass": "^1.43.4",
+    "sass-loader": "^12.1.0",
+    "tailwindcss": "^2.2.19"
+  }
+}
