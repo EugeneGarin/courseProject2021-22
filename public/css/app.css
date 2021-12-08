@@ -64,7 +64,6 @@ body *:not(.html-text) {
 
 body main {
   position: relative;
-  height: 100%;
 }
 
 body main::before {

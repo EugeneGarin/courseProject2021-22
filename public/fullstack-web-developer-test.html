@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>WebDevTests - Fullstack Web Developer Test</title>
-<script defer="defer" src=".//js/manifest.js"></script><script defer="defer" src=".//js/vendor.js"></script><script defer="defer" src=".//js/app.js"></script><link href="./css/tailwind.css" rel="stylesheet"><link href="./css/app.css" rel="stylesheet"></head>
+<script defer="defer" src=".//js/manifest.js"></script><script defer="defer" src=".//js/app.js"></script><link href="./css/tailwind.css" rel="stylesheet"><link href="./css/app.css" rel="stylesheet"></head>
 <body>
 
     <header class="px-4 py-6 h-32 bg-gray-800 relative text-white bg-opacity-70">
@@ -19,7 +19,7 @@
         <div>
             <img class="w-4 h-4" src="/public/images/arrow-down-glyph.svg" alt="">
         </div>
-        <div class="ml-2">Eugene</div>
+        <div class="ml-2">Євген</div>
     </div>
 
 </header>
@@ -38,36 +38,35 @@
 
             <div>
 
-                <form id="text-form" action="./test-results.html" method="post">
+                <form id="test-form" action="./test-results.html" method="post">
 
                     <ol>
 
-                        <li>
+                        <li class="mt-4">
 
-                            <h3 class="mt-4 text-2xl block">1. First Question</h3>
+                            <h3 class="text-2xl block">1. Скільки типів даних у РНР?</h3>
 
                             <div class="mt-4">
 
-                                <fieldset id="question-1">
+                                <label class="block p-1 cursor-pointer hover:filter-invert duration-200">
+                                    <input type="radio" value="5" name="question-id-1">
+                                    <span>5</span>
+                                </label>
 
-                                    <input type="hidden" value="First Question" name="question-1">
+                                <label class="block p-1 cursor-pointer hover:filter-invert duration-200">
+                                    <input type="radio" value="8" name="question-id-1">
+                                    <span>8</span>
+                                </label>
 
-                                    <label class="block p-1 cursor-pointer hover:filter-invert duration-200">
-                                        <input type="radio" value="First variant" name="question-1">
-                                        <span>First variant</span>
-                                    </label>
+                                <label class="block p-1 cursor-pointer hover:filter-invert duration-200">
+                                    <input type="radio" value="10" name="question-id-1">
+                                    <span>10</span>
+                                </label>
 
-                                    <label class="block p-1 cursor-pointer hover:filter-invert duration-200">
-                                        <input type="radio" value="Second variant" name="question-1">
-                                        <span>Second variant</span>
-                                    </label>
-
-                                    <label class="block p-1 cursor-pointer hover:filter-invert duration-200">
-                                        <input type="radio" value="Third variant" name="question-1">
-                                        <span>Third variant</span>
-                                    </label>
-
-                                </fieldset>
+                                <label class="block p-1 cursor-pointer hover:filter-invert duration-200">
+                                    <input type="radio" value="12" name="question-id-1">
+                                    <span>12</span>
+                                </label>
 
                             </div>
 
@@ -75,32 +74,21 @@
 
                         <hr class="my-8 opacity-50">
 
-                        <li>
+                        <li class="mt-4">
 
-                            <h3 class="mt-4 text-2xl block">2. Second Question</h3>
+                            <h3 class="text-2xl block">2. Чи є різниця між одинарними та подвійними лапками у PHP?</h3>
 
                             <div class="mt-4">
 
-                                <fieldset id="question-2">
+                                <label class="block p-1 cursor-pointer hover:filter-invert duration-200">
+                                    <input type="radio" value="Так" name="question-id-2">
+                                    <span>Так</span>
+                                </label>
 
-                                    <input type="hidden" value="Second Question" name="question-2">
-
-                                    <label class="block p-1 cursor-pointer hover:filter-invert duration-200">
-                                        <input type="radio" value="First variant" name="question-2">
-                                        <span>First variant</span>
-                                    </label>
-
-                                    <label class="block p-1 cursor-pointer hover:filter-invert duration-200">
-                                        <input type="radio" value="Second variant" name="question-2">
-                                        <span>Second variant</span>
-                                    </label>
-
-                                    <label class="block p-1 cursor-pointer hover:filter-invert duration-200">
-                                        <input type="radio" value="Third variant" name="question-2">
-                                        <span>Third variant</span>
-                                    </label>
-
-                                </fieldset>
+                                <label class="block p-1 cursor-pointer hover:filter-invert duration-200">
+                                    <input type="radio" value="Ні" name="question-id-2">
+                                    <span>Ні</span>
+                                </label>
 
                             </div>
 
@@ -108,32 +96,134 @@
 
                         <hr class="my-8 opacity-50">
 
-                        <li>
+                        <li class="mt-4">
 
-                            <h3 class="mt-4 text-2xl block">3. Third Question</h3>
+                            <h3 class="text-2xl block">3. Динамічна змінна це:</h3>
 
                             <div class="mt-4">
 
-                                <fieldset id="question-3">
+                                <label class="block p-1 cursor-pointer hover:filter-invert duration-200">
+                                    <input type="radio" value="Змінна що бере назву змінної та розглядає її як своє значення" name="question-id-3">
+                                    <span>Змінна що бере назву змінної та розглядає її як своє значення</span>
+                                </label>
 
-                                    <input type="hidden" value="Third Question" name="question-3">
+                                <label class="block p-1 cursor-pointer hover:filter-invert duration-200">
+                                    <input type="radio" value="Змінна що динамічно генерується випадковим чином" name="question-id-3">
+                                    <span>Змінна що динамічно генерується випадковим чином</span>
+                                </label>
 
-                                    <label class="block p-1 cursor-pointer hover:filter-invert duration-200">
-                                        <input type="radio" value="First variant" name="question-3">
-                                        <span>First variant</span>
-                                    </label>
+                                <label class="block p-1 cursor-pointer hover:filter-invert duration-200">
+                                    <input type="radio" value="Змінна що бере значення змінної та розглядає його як ім'я змінної" name="question-id-3">
+                                    <span>Змінна що бере значення змінної та розглядає його як ім'я змінної</span>
+                                </label>
 
-                                    <label class="block p-1 cursor-pointer hover:filter-invert duration-200">
-                                        <input type="radio" value="Second variant" name="question-3">
-                                        <span>Second variant</span>
-                                    </label>
+                            </div>
 
-                                    <label class="block p-1 cursor-pointer hover:filter-invert duration-200">
-                                        <input type="radio" value="Third variant" name="question-3">
-                                        <span>Third variant</span>
-                                    </label>
+                        </li>
 
-                                </fieldset>
+                        <hr class="my-8 opacity-50">
+
+                        <li class="mt-4">
+
+                            <h3 class="text-2xl block">4. Що таке шаблони (патерни) проектування?</h3>
+
+                            <div class="mt-4">
+
+                                <label class="block p-1 cursor-pointer hover:filter-invert duration-200">
+                                    <input type="radio" value="Модель вирішення завдань, що не повторюються" name="question-id-4">
+                                    <span>Модель вирішення завдань, що не повторюються</span>
+                                </label>
+
+                                <label class="block p-1 cursor-pointer hover:filter-invert duration-200">
+                                    <input type="radio" value="Модель вирішення завдань, що багаторазово повторюється" name="question-id-4">
+                                    <span>Модель вирішення завдань, що багаторазово повторюється</span>
+                                </label>
+
+                                <label class="block p-1 cursor-pointer hover:filter-invert duration-200">
+                                    <input type="radio" value="Модель вирішення завдань, що не можуть бути вирішені звичайними методами проектування" name="question-id-4">
+                                    <span>Модель вирішення завдань, що не можуть бути вирішені звичайними методами проектування</span>
+                                </label>
+
+                            </div>
+
+                        </li>
+
+                        <hr class="my-8 opacity-50">
+
+                        <li class="mt-4">
+
+                            <h3 class="text-2xl block">5. Які ще є парадигми (моделі, підходи) програмування, крім ООП?</h3>
+
+                            <div class="mt-4">
+
+                                <label class="block p-1 cursor-pointer hover:filter-invert duration-200">
+                                    <input type="radio" value="Функціональна та процедурна" name="question-id-5">
+                                    <span>Функціональна та процедурна</span>
+                                </label>
+
+                                <label class="block p-1 cursor-pointer hover:filter-invert duration-200">
+                                    <input type="radio" value="Аспектно-орієнтована" name="question-id-5">
+                                    <span>Аспектно-орієнтована</span>
+                                </label>
+
+                                <label class="block p-1 cursor-pointer hover:filter-invert duration-200">
+                                    <input type="radio" value="Усі варіанти вірні" name="question-id-5">
+                                    <span>Усі варіанти вірні</span>
+                                </label>
+
+                            </div>
+
+                        </li>
+
+                        <hr class="my-8 opacity-50">
+
+                        <li class="mt-4">
+
+                            <h3 class="text-2xl block">6. Потрібно за допомогою alert() вивести якесь повідомлення через 3 секунди після запуску скрипта. Як це зробити?</h3>
+
+                            <div class="mt-4">
+
+                                <label class="block p-1 cursor-pointer hover:filter-invert duration-200">
+                                    <input type="radio" value="setTimeout( function(){ alert('Hello'); }, 3000 );" name="question-id-6">
+                                    <span>setTimeout( function(){ alert('Hello'); }, 3000 );</span>
+                                </label>
+
+                                <label class="block p-1 cursor-pointer hover:filter-invert duration-200">
+                                    <input type="radio" value="sleep( 3000, function(){ alert('Hello'); } );" name="question-id-6">
+                                    <span>sleep( 3000, function(){ alert('Hello'); } );</span>
+                                </label>
+
+                                <label class="block p-1 cursor-pointer hover:filter-invert duration-200">
+                                    <input type="radio" value="setTimeout( 3000, function(){ alert('Hello'); } );" name="question-id-6">
+                                    <span>setTimeout( 3000, function(){ alert('Hello'); } );</span>
+                                </label>
+
+                            </div>
+
+                        </li>
+
+                        <hr class="my-8 opacity-50">
+
+                        <li class="mt-4">
+
+                            <h3 class="text-2xl block">7. У чому різниця між записом #my та .my?</h3>
+
+                            <div class="mt-4">
+
+                                <label class="block p-1 cursor-pointer hover:filter-invert duration-200">
+                                    <input type="radio" value="#my – селектор класу, а .my – селектор ID." name="question-id-7">
+                                    <span>#my – селектор класу, а .my – селектор ID.</span>
+                                </label>
+
+                                <label class="block p-1 cursor-pointer hover:filter-invert duration-200">
+                                    <input type="radio" value="#my – селектор ID, а .my – селектор класу." name="question-id-7">
+                                    <span>#my – селектор ID, а .my – селектор класу.</span>
+                                </label>
+
+                                <label class="block p-1 cursor-pointer hover:filter-invert duration-200">
+                                    <input type="radio" value="Немає вірної відповіді" name="question-id-7">
+                                    <span>Немає вірної відповіді</span>
+                                </label>
 
                             </div>
 
