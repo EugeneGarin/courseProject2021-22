@@ -47,8 +47,9 @@
 }
 
 body {
+  position: relative;
   display: flex;
-  height: 100vh;
+  min-height: 100vh;
   flex-direction: column;
   justify-content: space-between;
   font-family: Ubuntu Mono;
@@ -58,15 +59,11 @@ body {
   background-image: radial-gradient(rgba(24, 59, 70, 0.75), black 120%);
 }
 
-body *:not(.html-text) {
-  text-shadow: 0 0 5px #C8C8C8;
-}
-
 body main {
-  position: relative;
+  flex-grow: 1;
 }
 
-body main::before {
+body::before {
   content: "";
   position: absolute;
   top: 0px;
@@ -77,6 +74,10 @@ body main::before {
   background-image: url(../images/background-shapes.png);
   background-size: 30%;
   z-index: -1;
+}
+
+body *:not(.html-text) {
+  text-shadow: 0 0 5px #C8C8C8;
 }
 
 .html-text {

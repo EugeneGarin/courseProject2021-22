@@ -3,29 +3,27 @@
 
 body {
 
-    @apply flex flex-col justify-between h-screen text-white font-primary;
+    @apply flex flex-col justify-between min-h-screen text-white font-primary relative;
 
     background-color: black;
     background-image: radial-gradient(
       rgba(24, 59, 70, 0.75), black 120%
     );
 
-    *:not(.html-text) {
-        text-shadow: 0 0 5px #C8C8C8;
+    main {
+        @apply flex-grow;
     }
 
-    main {
+    &::before {
+        content: '';
+        @apply absolute top-0 left-0 w-full h-full opacity-30;
+        background-image: url(../images/background-shapes.png);
+        background-size: 30%;
+        z-index: -1;
+    }
 
-        @apply relative;
-
-        &::before {
-            content: '';
-            @apply absolute top-0 left-0 w-full h-full opacity-30;
-            background-image: url(../images/background-shapes.png);
-            background-size: 30%;
-            z-index: -1;
-        }
-
+    *:not(.html-text) {
+        text-shadow: 0 0 5px #C8C8C8;
     }
 
 }
