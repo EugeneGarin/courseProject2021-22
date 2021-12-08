@@ -1,0 +1,43 @@
+// Fonts faces
+@import "fonts";
+
+body {
+
+    @apply flex flex-col justify-between min-h-screen;
+    @apply text-white font-primary relative bg-black;
+
+    background-image: radial-gradient(
+      rgba(24, 59, 70, 0.75), black 120%
+    );
+
+    main {
+        @apply flex-grow;
+    }
+
+    &::before {
+        content: '';
+        @apply absolute top-0 left-0 w-full h-full opacity-30;
+        background-image: url(../img/background-shapes.png);
+        background-size: 30%;
+        z-index: -1;
+    }
+
+    *:not(.html-text) {
+        text-shadow: 0 0 5px #C8C8C8;
+    }
+
+}
+
+.html-text {
+    @apply font-mono text-gray-500;
+}
+
+[x-cloak] { display: none !important; }
+
+@variants hover {
+
+    .filter-invert {
+        background: #00000040;
+    }
+
+}

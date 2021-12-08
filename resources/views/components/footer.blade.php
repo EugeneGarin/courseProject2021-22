@@ -1,0 +1,8 @@
+<footer class="px-4 py-12 bg-gray-800 bg-opacity-70">
+
+    <a href="{{ URL::to('/') }}" class="mx-auto h-full flex flex-col justify-center items-center w-max">
+        <img class="w-14 h-14" src="{{ asset('img/site-logo.svg') }}" alt="Logo">
+        <div class="mt-4 text-white font-mono font-bold text-3xl">Web Dev Tests</div>
+    </a>
+
+</footer>

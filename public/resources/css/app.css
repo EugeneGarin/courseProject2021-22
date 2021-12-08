@@ -1,0 +1,100 @@
+@font-face {
+  font-family: "Ubuntu Mono";
+
+  src: url("../fonts/UbuntuMono-Italic.woff2") format("woff2"), url("../fonts/UbuntuMono-Italic.woff") format("woff");
+
+  font-weight: normal;
+
+  font-style: italic;
+
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Ubuntu Mono";
+
+  src: url("../fonts/UbuntuMono-BoldItalic.woff2") format("woff2"), url("../fonts/UbuntuMono-BoldItalic.woff") format("woff");
+
+  font-weight: bold;
+
+  font-style: italic;
+
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Ubuntu Mono";
+
+  src: url("../fonts/UbuntuMono-Regular.woff2") format("woff2"), url("../fonts/UbuntuMono-Regular.woff") format("woff");
+
+  font-weight: normal;
+
+  font-style: normal;
+
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Ubuntu Mono";
+
+  src: url("../fonts/UbuntuMono-Bold.woff2") format("woff2"), url("../fonts/UbuntuMono-Bold.woff") format("woff");
+
+  font-weight: bold;
+
+  font-style: normal;
+
+  font-display: swap;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  --tw-bg-opacity: 1;
+  background-color: rgba(0, 0, 0, var(--tw-bg-opacity));
+  font-family: Ubuntu Mono;
+  --tw-text-opacity: 1;
+  color: rgba(255, 255, 255, var(--tw-text-opacity));
+  background-image: radial-gradient(rgba(24, 59, 70, 0.75), black 120%);
+}
+
+body main {
+  flex-grow: 1;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  opacity: 0.3;
+  background-image: url(../images/background-shapes.png);
+  background-size: 30%;
+  z-index: -1;
+}
+
+body *:not(.html-text) {
+  text-shadow: 0 0 5px #C8C8C8;
+}
+
+.html-text {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --tw-text-opacity: 1;
+  color: rgba(107, 114, 128, var(--tw-text-opacity));
+}
+
+[x-cloak] {
+  display: none !important;
+}
+
+.filter-invert {
+  background: #00000040;
+}
+
+.hover\:filter-invert:hover {
+  background: #00000040;
+}
