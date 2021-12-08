@@ -3,6 +3,31 @@
 
 body {
 
-    @apply bg-gray-700 flex flex-col justify-between h-screen text-white font-primary;
+    @apply flex flex-col justify-between h-screen text-white font-primary;
+
+    background-color: black;
+    background-image: radial-gradient(
+      rgba(24, 59, 70, 0.75), black 120%
+    );
+
+    *:not(.html-text) {
+        text-shadow: 0 0 5px #C8C8C8;
+    }
+
+    main {
+        @apply h-full;
+    }
+
+}
+
+.html-text {
+    @apply font-mono text-gray-500;
+}
+
+@variants hover {
+
+    .filter-invert {
+        background: #00000040;
+    }
 
 }
