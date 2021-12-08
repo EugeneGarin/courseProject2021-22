@@ -47,15 +47,16 @@
 }
 
 body {
-  position: relative;
   display: flex;
   min-height: 100vh;
   flex-direction: column;
   justify-content: space-between;
+  position: relative;
+  --tw-bg-opacity: 1;
+  background-color: rgba(0, 0, 0, var(--tw-bg-opacity));
   font-family: Ubuntu Mono;
   --tw-text-opacity: 1;
   color: rgba(255, 255, 255, var(--tw-text-opacity));
-  background-color: black;
   background-image: radial-gradient(rgba(24, 59, 70, 0.75), black 120%);
 }
 
@@ -84,6 +85,10 @@ body *:not(.html-text) {
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --tw-text-opacity: 1;
   color: rgba(107, 114, 128, var(--tw-text-opacity));
+}
+
+[x-cloak] {
+  display: none !important;
 }
 
 .filter-invert {
