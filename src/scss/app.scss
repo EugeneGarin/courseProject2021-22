@@ -15,7 +15,17 @@ body {
     }
 
     main {
-        @apply h-full;
+
+        @apply h-full relative;
+
+        &::before {
+            content: '';
+            @apply absolute top-0 left-0 w-full h-full opacity-30;
+            background-image: url(../images/background-shapes.png);
+            background-size: 30%;
+            z-index: -1;
+        }
+
     }
 
 }

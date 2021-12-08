@@ -63,7 +63,21 @@ body *:not(.html-text) {
 }
 
 body main {
+  position: relative;
   height: 100%;
+}
+
+body main::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  opacity: 0.3;
+  background-image: url(../images/background-shapes.png);
+  background-size: 30%;
+  z-index: -1;
 }
 
 .html-text {
