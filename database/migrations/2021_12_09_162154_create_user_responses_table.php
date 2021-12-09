@@ -18,7 +18,7 @@ class CreateUserResponsesTable extends Migration
             $table->foreignId('user_id')->on('users');
             $table->foreignId('user_quiz_id')->on('user_quizzes');
             $table->foreignId('question_id')->on('questions');
-            $table->foreignId('selected_variant_id')->on('variants');
+            $table->foreignId('selected_variant_id')->on('variants')->nullable();
             $table->foreignId('correct_variant_id')->on('variants');
             $table->timestamps();
         });

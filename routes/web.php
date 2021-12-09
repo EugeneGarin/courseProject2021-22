@@ -4,6 +4,7 @@ use App\Http\Controllers\quizSubmitController;
 use App\Models\Quiz;
 use App\Models\User;
 use App\Models\User_quiz;
+use App\Models\User_response;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -29,14 +30,20 @@ Route::get('tests/{quiz:slug}', function (Quiz $quiz) {
             'quiz' => $quiz,
         ]);
 
-    }
+    } else abort(404);
 
 });
 
 Route::post('/testing-results', [quizSubmitController::class, 'submit']);
 
-Route::get('/user-profile', function (User $user) {
+Route::get('/user-profile', function () { return view('user-profile'); });
 
-    return view('user-profile');
+Route::get('/user-profile/archive', function () {
+
+    return view('results-archive', [
+        'user_quizzes' => User_quiz::where('user_id', '1')->get(),
+        'quiz' => Quiz::all(),
+        'user_responses' => User_response::where('user_id', '1')->get(),
+    ]);
 
 });

@@ -17,6 +17,7 @@ class CreateUserQuizzesTable extends Migration
             $table->id();
             $table->foreignId('user_id')->on('users');
             $table->foreignId('quiz_id')->on('quizzes');
+            $table->integer('score');
             $table->timestamps();
         });
     }

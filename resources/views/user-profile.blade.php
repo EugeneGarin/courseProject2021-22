@@ -61,7 +61,7 @@
                     <ul class="ml-4">
                         <li class="p-1 cursor-pointer hover:filter-invert group duration-200 relative">
                             <span class="html-text">&lt;li&gt;</span>
-                            <a href="" class="underline group-hover:no-underline">Переглянути результати тестів</a>
+                            <a href="user-profile/archive" class="underline group-hover:no-underline">Переглянути результати тестів</a>
                             <span class="html-text">&lt;/li&gt;</span>
                         </li>
                         <li class="p-1 cursor-pointer hover:filter-invert group duration-200 relative">
