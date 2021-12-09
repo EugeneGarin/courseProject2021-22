@@ -3,6 +3,7 @@
 use App\Http\Controllers\quizSubmitController;
 use App\Models\Quiz;
 use App\Models\User;
+use App\Models\User_quiz;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -17,17 +18,17 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('homepage', [
-
-    ]);
+    return view('homepage');
 });
 
 Route::get('tests/{quiz:slug}', function (Quiz $quiz) {
 
     if ( view()->exists( 'tests/'.$quiz->slug ) ) {
+
         return view('tests/'.$quiz->slug, [
             'quiz' => $quiz,
         ]);
+
     }
 
 });
