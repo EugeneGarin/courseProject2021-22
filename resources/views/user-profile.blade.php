@@ -12,7 +12,7 @@
 
         <hr class="my-8 opacity-50">
 
-        <div class="flex justify-between">
+        <div class="flex flex-col md:flex-row justify-between">
 
             <div>
 
@@ -50,7 +50,7 @@
 
             </div>
 
-            <div>
+            <div class="mt-12 md:mt-0">
 
                 <div class="mt-4 text-2xl block">Можливості:</div>
 

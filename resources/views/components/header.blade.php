@@ -2,7 +2,7 @@
 
     <div class="mx-auto max-w-7xl flex justify-center relative">
 
-        <div class="flex-grow">
+        <div class="mr-auto md:mr-0">
             <a href="{{ URL::to('/') }}" class="mx-auto flex justify-center items-center h-full cursor-pointer w-max">
                 <img class="w-14 h-14" src="{{ asset('img/site-logo.svg') }}" alt="Logo">
                 <div class="max-w-min ml-4 font-mono leading-7 font-bold text-3xl">Web Dev Tests</div>
@@ -23,7 +23,7 @@
 
                 </div>
 
-                <div x-cloak x-show="isUserMenuOpen" class="pt-2 absolute top-full left-0 w-80">
+                <div x-cloak x-show="isUserMenuOpen" class="pt-2 absolute top-full right-0 w-max text-right">
                     <ul>
                         <li><a class="underline hover:no-underline" href="/user-profile">Персональний кабінет</a></li>
                         <li><a class="underline hover:no-underline" href="">Вийти</a></li>
