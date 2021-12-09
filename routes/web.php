@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\quizSubmitController;
 use App\Models\Quiz;
+use App\Models\User;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,7 +17,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('homepage');
+    return view('homepage', [
+
+    ]);
 });
 
 Route::get('tests/{quiz:slug}', function (Quiz $quiz) {
@@ -30,3 +33,9 @@ Route::get('tests/{quiz:slug}', function (Quiz $quiz) {
 });
 
 Route::post('/testing-results', [quizSubmitController::class, 'submit']);
+
+Route::get('/user-profile', function (User $user) {
+
+    return view('user-profile');
+
+});

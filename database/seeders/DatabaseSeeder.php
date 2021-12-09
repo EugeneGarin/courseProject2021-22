@@ -14,15 +14,24 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
+        DB::table('users')->delete();
         DB::table('questions')->delete();
         DB::table('variants')->delete();
         DB::table('quizzes')->delete();
+
+        DB::table('users')->insert([
+            'name' => 'Євген Гарін',
+            'email'  => 'diterecs@gmail.com',
+            'password'  => hash('md5', '123456789'),
+        ]);
+
 
         DB::table('quizzes')->insert([
             'id'    => 1,
             'title' => 'Fullstack Web Developer',
             'slug'  => 'fullstack-web-developer',
         ]);
+
 
         DB::table('variants')->insert([
             'id'            => 1,
