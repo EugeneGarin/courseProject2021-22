@@ -61,7 +61,7 @@
 
                 </ol>
 
-                <input type="submit" value="Submit" class="mt-12 px-8 py-1.5 font-bold text-2xl cursor-pointer bg-gray-800 rounded-md border border-gray-700 hover:border-gray-800 hover:bg-gray-700 duration-500">
+                <input type="submit" value="Підтвердити" class="mt-12 px-8 py-1.5 font-bold text-2xl cursor-pointer bg-gray-800 rounded-md border border-gray-700 hover:border-gray-800 hover:bg-gray-700 duration-500">
 
             </form>
 
