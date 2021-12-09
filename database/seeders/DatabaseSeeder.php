@@ -16,179 +16,193 @@ class DatabaseSeeder extends Seeder
     {
         DB::table('questions')->delete();
         DB::table('variants')->delete();
+        DB::table('quizzes')->delete();
+
+        DB::table('quizzes')->insert([
+            'id'    => 1,
+            'title' => 'Fullstack Web Developer',
+            'slug'  => 'fullstack-web-developer',
+        ]);
 
         DB::table('variants')->insert([
             'id'            => 1,
-            'variant_text'  => '5',
+            'title'  => '5',
             'question_id'   => 1,
         ]);
 
         DB::table('variants')->insert([
             'id'            => 2,
-            'variant_text'  => '8',
+            'title'  => '8',
             'question_id'   => 1,
         ]);
 
         DB::table('variants')->insert([
             'id'            => 3,
-            'variant_text'  => '10',
+            'title'  => '10',
             'question_id'   => 1,
         ]);
 
         DB::table('variants')->insert([
             'id'            => 4,
-            'variant_text'  => '12',
+            'title'  => '12',
             'question_id'   => 1,
         ]);
 
         DB::table('questions')->insert([
             'id'                    => 1,
-            'question_text'         => 'Скільки типів даних у РНР?',
+            'title'         => 'Скільки типів даних у РНР?',
             'correct_variant_id'    => 3,
+            'quiz_id'               => 1,
         ]);
 
 
         DB::table('variants')->insert([
             'id'            => 5,
-            'variant_text'  => 'Так',
+            'title'  => 'Так',
             'question_id'   => 2,
         ]);
 
         DB::table('variants')->insert([
             'id'            => 6,
-            'variant_text'  => 'Ні',
+            'title'  => 'Ні',
             'question_id'   => 2,
         ]);
 
         DB::table('questions')->insert([
             'id'                    => 2,
-            'question_text'         => 'Чи є різниця між одинарними та подвійними лапками у PHP?',
+            'title'         => 'Чи є різниця між одинарними та подвійними лапками у PHP?',
             'correct_variant_id'    => 5,
+            'quiz_id'               => 1,
         ]);
 
 
         DB::table('variants')->insert([
             'id'            => 7,
-            'variant_text'  => 'Змінна що бере назву змінної та розглядає її як своє значення',
+            'title'  => 'Змінна що бере назву змінної та розглядає її як своє значення',
             'question_id'   => 3,
         ]);
 
         DB::table('variants')->insert([
             'id'            => 8,
-            'variant_text'  => 'Змінна що динамічно генерується випадковим чином',
+            'title'  => 'Змінна що динамічно генерується випадковим чином',
             'question_id'   => 3,
         ]);
 
         DB::table('variants')->insert([
             'id'            => 9,
-            'variant_text'  => 'Змінна що бере значення змінної та розглядає його як ім\'я змінної',
+            'title'  => 'Змінна що бере значення змінної та розглядає його як ім\'я змінної',
             'question_id'   => 3,
         ]);
 
         DB::table('questions')->insert([
             'id'                    => 3,
-            'question_text'         => 'Динамічна змінна це:',
+            'title'         => 'Динамічна змінна це:',
             'correct_variant_id'    => 9,
+            'quiz_id'               => 1,
         ]);
 
 
         DB::table('variants')->insert([
             'id'            => 10,
-            'variant_text'  => 'Модель вирішення завдань, що не повторюються',
+            'title'  => 'Модель вирішення завдань, що не повторюються',
             'question_id'   => 4,
         ]);
 
         DB::table('variants')->insert([
             'id'            => 11,
-            'variant_text'  => 'Модель вирішення завдань, що багаторазово повторюється',
+            'title'  => 'Модель вирішення завдань, що багаторазово повторюється',
             'question_id'   => 4,
         ]);
 
         DB::table('variants')->insert([
             'id'            => 12,
-            'variant_text'  => 'Модель вирішення завдань, що не можуть бути вирішені звичайними методами проектування',
+            'title'  => 'Модель вирішення завдань, що не можуть бути вирішені звичайними методами проектування',
             'question_id'   => 4,
         ]);
 
         DB::table('questions')->insert([
             'id'                    => 4,
-            'question_text'         => 'Що таке шаблони (патерни) проектування?',
+            'title'         => 'Що таке шаблони (патерни) проектування?',
             'correct_variant_id'    => 11,
+            'quiz_id'               => 1,
         ]);
 
 
         DB::table('variants')->insert([
             'id'            => 13,
-            'variant_text'  => 'Функціональна та процедурна',
+            'title'  => 'Функціональна та процедурна',
             'question_id'   => 5,
         ]);
 
         DB::table('variants')->insert([
             'id'            => 14,
-            'variant_text'  => 'Аспектно-орієнтована',
+            'title'  => 'Аспектно-орієнтована',
             'question_id'   => 5,
         ]);
 
         DB::table('variants')->insert([
             'id'            => 15,
-            'variant_text'  => 'Усі варіанти вірні',
+            'title'  => 'Усі варіанти вірні',
             'question_id'   => 5,
         ]);
 
         DB::table('questions')->insert([
             'id'                    => 5,
-            'question_text'         => 'Які ще є парадигми (моделі, підходи) програмування, крім ООП?',
+            'title'         => 'Які ще є парадигми (моделі, підходи) програмування, крім ООП?',
             'correct_variant_id'    => 15,
+            'quiz_id'               => 1,
         ]);
 
 
         DB::table('variants')->insert([
             'id'            => 16,
-            'variant_text'  => 'setTimeout( function(){ alert(\'Hello\'); }, 3000 );',
+            'title'  => 'setTimeout( function(){ alert(\'Hello\'); }, 3000 );',
             'question_id'   => 6,
         ]);
 
         DB::table('variants')->insert([
             'id'            => 17,
-            'variant_text'  => 'sleep( 3000, function(){ alert(\'Hello\'); } );',
+            'title'  => 'sleep( 3000, function(){ alert(\'Hello\'); } );',
             'question_id'   => 6,
         ]);
 
         DB::table('variants')->insert([
             'id'            => 18,
-            'variant_text'  => 'setTimeout( 3000, function(){ alert(\'Hello\'); } );',
+            'title'  => 'setTimeout( 3000, function(){ alert(\'Hello\'); } );',
             'question_id'   => 6,
         ]);
 
         DB::table('questions')->insert([
             'id'                    => 6,
-            'question_text'         => 'Потрібно за допомогою alert() вивести якесь повідомлення через 3 секунди після запуску скрипта. Як це зробити?',
+            'title'         => 'Потрібно за допомогою alert() вивести якесь повідомлення через 3 секунди після запуску скрипта. Як це зробити?',
             'correct_variant_id'    => 16,
+            'quiz_id'               => 1,
         ]);
 
 
         DB::table('variants')->insert([
             'id'            => 19,
-            'variant_text'  => '#my – селектор класу, а .my – селектор ID.',
+            'title'  => '#my – селектор класу, а .my – селектор ID.',
             'question_id'   => 7,
         ]);
 
         DB::table('variants')->insert([
             'id'            => 20,
-            'variant_text'  => '#my – селектор ID, а .my – селектор класу.',
+            'title'  => '#my – селектор ID, а .my – селектор класу.',
             'question_id'   => 7,
         ]);
 
         DB::table('variants')->insert([
             'id'            => 21,
-            'variant_text'  => 'Немає вірної відповіді',
+            'title'  => 'Немає вірної відповіді',
             'question_id'   => 7,
         ]);
 
         DB::table('questions')->insert([
             'id'                    => 7,
-            'question_text'         => 'У чому різниця між записом #my та .my?',
+            'title'         => 'У чому різниця між записом #my та .my?',
             'correct_variant_id'    => 20,
+            'quiz_id'               => 1,
         ]);
 
     }

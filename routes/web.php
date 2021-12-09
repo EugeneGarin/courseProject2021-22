@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\Quiz;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -17,16 +18,17 @@ Route::get('/', function () {
     return view('homepage');
 });
 
-Route::get('/tests/{slug}', function ($slug) {
+Route::get('tests/{quiz:slug}', function (Quiz $quiz) {
 
-
-    if ( view()->exists($slug) ) {
-        return view($slug);
+    if ( view()->exists( 'tests/'.$quiz->slug ) ) {
+        return view('tests/'.$quiz->slug, [
+            'questions' => $quiz->questions,
+        ]);
     }
 
 });
 
-Route::get('/testing-results', function () {
+Route::get('testing-results', function () {
 
     return view('testing-results');
 
