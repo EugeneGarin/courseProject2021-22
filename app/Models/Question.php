@@ -16,7 +16,7 @@ class Question extends Model
         return $this->hasMany(Variant::class);
     }
 
-    public function Quiz()
+    public function quiz()
     {
         return $this->belongsTo(Quiz::class);
     }

@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\quizSubmitController;
 use App\Models\Quiz;
 use Illuminate\Support\Facades\Route;
 
@@ -22,14 +23,10 @@ Route::get('tests/{quiz:slug}', function (Quiz $quiz) {
 
     if ( view()->exists( 'tests/'.$quiz->slug ) ) {
         return view('tests/'.$quiz->slug, [
-            'questions' => $quiz->questions,
+            'quiz' => $quiz,
         ]);
     }
 
 });
 
-Route::get('testing-results', function () {
-
-    return view('testing-results');
-
-});
+Route::post('/testing-results', [quizSubmitController::class, 'submit']);

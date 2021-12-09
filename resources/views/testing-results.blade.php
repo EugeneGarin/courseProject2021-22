@@ -2,6 +2,8 @@
 
 @section('content')
 
+    {{-- <?php dd($questions); echo "<pre>"; var_dump( $request->input() ); echo "</pre>"; ?> --}}
+
     <section class="mx-auto px-4 max-w-7xl rounded-md py-12">
 
         <div class="text-center font-bold text-3xl">
@@ -12,11 +14,69 @@
 
         <hr class="my-8 opacity-50">
 
+        <ol>
+
+            @php
+                $correct_answer_number = 0;
+            @endphp
+
+            @foreach ( $request->input()['answers'] as $key => $answer )
+
+                @php
+                    $is_correct_answer = false;
+                @endphp
+
+                @if ( array_key_exists( 'selected_variant_id', $answer ) && $questions[ $answer['question_id'] ][0]['correct_variant_id'] == $answer['selected_variant_id'] )
+
+                    @php
+                        $is_correct_answer = true;
+                        $correct_answer_number++;
+                    @endphp
+
+                @endif
+
+                <li class="mt-4">
+
+                    <h3 class="text-2xl block <?php echo $is_correct_answer ? 'text-green-400' : 'text-red-600'; ?>">{{ $key + 1 }}. {{ $answer['question_title'] }}</h3>
+
+                    <div class="mt-4">
+
+                        @foreach ( $answer['variants'] as $variant )
+
+                            <label class="block p-1 cursor-pointer hover:filter-invert duration-200" x-data={} @click="event.preventDefault();">
+                                <input type="radio"
+                                @if ( array_key_exists( 'selected_variant_id', $answer ) && $variant['id'] == $answer['selected_variant_id'] )
+                                    checked
+                                @endif
+                                >
+                                <span>{{ $variant['title'] }}</span>
+                            </label>
+
+                        @endforeach
+
+                    </div>
+
+                    @if (! $loop->last)
+
+                        <hr class="my-8 opacity-50">
+
+                    @endif
+
+                </li>
+
+            @endforeach
+
+        </ol>
+
+        @php
+            $overall_questions_number = count( $request->input()['answers'] );
+            $score = round ( ( $correct_answer_number / $overall_questions_number ) * 100 );
+        @endphp
+
         <div class="text-center">
 
             <div class="text-2xl">Ваш результат:</div>
-            <div class="mx-auto mt-4 border-8 rounded-full w-28 h-28 flex justify-center items-center border-yellow-200 font-bold text-2xl">74/100</div>
-            <div class="mt-4 text-xl">Ви маєте досить непогані навички програмування у сферах з якими працюєте, але вам треба ще трошки підтягнути ваші знання ;)</div>
+            <div class="mx-auto mt-4 border-8 rounded-full w-28 h-28 flex justify-center items-center <?php if ( $score < 50 ) echo 'border-red-600'; elseif ( $score < 70 ) echo 'border-yellow-200'; else echo 'border-green-400'; ?> font-bold text-2xl">{{ $score }}/100</div>
 
         </div>
 
