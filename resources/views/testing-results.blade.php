@@ -78,6 +78,8 @@
             <div class="text-2xl">Ваш результат:</div>
             <div class="mx-auto mt-4 border-8 rounded-full w-28 h-28 flex justify-center items-center <?php if ( $score < 50 ) echo 'border-red-600'; elseif ( $score < 70 ) echo 'border-yellow-200'; else echo 'border-green-400'; ?> font-bold text-2xl">{{ $score }}/100</div>
 
+            <a href="/" class="mt-8 mx-auto px-8 py-1.5 block max-w-max font-bold text-2xl cursor-pointer bg-gray-800 rounded-md border border-gray-700 hover:border-gray-800 hover:bg-gray-700 duration-500">Повернутись на головну сторінку</a>
+
         </div>
 
     </section>
