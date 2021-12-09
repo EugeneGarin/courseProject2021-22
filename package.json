@@ -20,5 +20,8 @@
         "sass": "^1.44.0",
         "sass-loader": "^12.1.0",
         "tailwindcss": "^2.2.19"
+    },
+    "dependencies": {
+        "alpinejs": "^3.7.0"
     }
 }

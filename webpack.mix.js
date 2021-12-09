@@ -11,11 +11,7 @@ require('mix-tailwindcss');
  |
  */
 
-mix.js('resources/js/app.js', 'public/js')
-    .extract(['alpine'])
-    .postCss('resources/css/app.css', 'public/css', [
-        //
-    ]);
+mix.js('resources/js/app.js', 'public/js/app.js');
 
 
 // SASS
@@ -25,3 +21,6 @@ mix.sass('resources/scss/tailwind.scss', 'public/css/tailwind.css').tailwind(
 );
 
 mix.copyDirectory('resources/fonts', 'public/fonts');
+
+// Disable annoying notification upon file save when mix watch is running
+mix.disableSuccessNotifications();

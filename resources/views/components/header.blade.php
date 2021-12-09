@@ -9,11 +9,11 @@
             </a>
         </div>
 
-        <div x-data="{ isUserMenuOpen: false }" @mouseenter="isUserMenuOpen = true" @mouseleave="isUserMenuOpen = false" >
+        <div x-data="{ isUserMenuOpen: false }" @mouseleave="isUserMenuOpen = false" >
 
             <div class="relative">
 
-                <div class="text-xl flex items-baseline cursor-pointer">
+                <div class="text-xl flex items-baseline cursor-pointer" @mouseenter="isUserMenuOpen = true" >
 
                     <div>
                         <img class="w-4 h-4" src="{{ asset('img/arrow-down-glyph.svg') }}" alt="">
