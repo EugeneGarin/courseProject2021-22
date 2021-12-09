@@ -16,3 +16,18 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('homepage');
 });
+
+Route::get('/tests/{slug}', function ($slug) {
+
+
+    if ( view()->exists($slug) ) {
+        return view($slug);
+    }
+
+});
+
+Route::get('/testing-results', function () {
+
+    return view('testing-results');
+
+});

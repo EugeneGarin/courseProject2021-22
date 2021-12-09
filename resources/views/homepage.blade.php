@@ -22,7 +22,7 @@
 
                 <ul class="ml-4">
                     <li class="p-1 cursor-pointer hover:filter-invert duration-200 relative">
-                        <a href="./fullstack-web-developer-test.html" class="absolute top-0 left-0 w-full h-full"></a>
+                        <a href="/tests/fullstack-web-developer-test" class="absolute top-0 left-0 w-full h-full"></a>
                         <span class="html-text">&lt;li&gt;</span>
                         <span>Fullstack Web Developer</span>
                         <span class="html-text">&lt;/li&gt;</span>
